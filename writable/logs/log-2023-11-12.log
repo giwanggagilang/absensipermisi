@@ -1,0 +1,2377 @@
+INFO - 2023-11-12 17:07:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 17:07:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 17:07:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 17:07:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 17:07:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 17:08:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 17:09:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 17:09:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 17:27:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 17:31:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 17:32:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 17:32:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 17:32:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 17:32:57 --> Call to a member function getRandomName() on null
+in APPPATH\Controllers\Monitoring.php on line 38.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Monitoring->insertData()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-12 17:33:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-12 17:33:50 --> mysqli_sql_exception: Unknown column 'nik' in 'field list' in C:\xampp\htdocs\e-absensi\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\e-absensi\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\e-absensi\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\e-absensi\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\e-absensi\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\e-absensi\app\Models\ModelMonitoring.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\e-absensi\app\Controllers\Monitoring.php(48): App\Models\ModelMonitoring->insertData(Array)
+#6 C:\xampp\htdocs\e-absensi\system\CodeIgniter.php(919): App\Controllers\Monitoring->insertData()
+#7 C:\xampp\htdocs\e-absensi\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+#8 C:\xampp\htdocs\e-absensi\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\e-absensi\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-12 17:33:50 --> Unknown column 'nik' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_presensi` (`nik`, `nama_karyawan`, `id_jabatan`, `jam_in`, `jam_out`) VALUES (:nik:, :nama_karyawan:, :id_jabatan:, :jam_in:, :jam_out:)', [...], false)
+ 2 APPPATH\Models\ModelMonitoring.php(27): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Monitoring.php(48): App\Models\ModelMonitoring->insertData([...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Monitoring->insertData()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-12 17:34:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-12 17:34:52 --> mysqli_sql_exception: Unknown column 'nik' in 'field list' in C:\xampp\htdocs\e-absensi\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\e-absensi\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\e-absensi\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\e-absensi\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\e-absensi\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\e-absensi\app\Models\ModelMonitoring.php(25): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\e-absensi\app\Controllers\Monitoring.php(48): App\Models\ModelMonitoring->insertData(Array)
+#6 C:\xampp\htdocs\e-absensi\system\CodeIgniter.php(919): App\Controllers\Monitoring->insertData()
+#7 C:\xampp\htdocs\e-absensi\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+#8 C:\xampp\htdocs\e-absensi\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\e-absensi\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-12 17:34:52 --> Unknown column 'nik' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_presensi` (`nik`, `nama_karyawan`, `id_jabatan`, `jam_in`, `jam_out`) VALUES (:nik:, :nama_karyawan:, :id_jabatan:, :jam_in:, :jam_out:)', [...], false)
+ 2 APPPATH\Models\ModelMonitoring.php(25): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Monitoring.php(48): App\Models\ModelMonitoring->insertData([...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Monitoring->insertData()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-12 18:26:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 18:26:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 18:26:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 18:26:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 18:26:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 18:26:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 18:26:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 18:26:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 18:26:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 18:27:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 18:27:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 18:27:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 18:27:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 19:19:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 19:19:06 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(599): CodeIgniter\Model->builder()
+ 3 SYSTEMPATH\BaseModel.php(1203): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Controllers\Karyawan.php(24): CodeIgniter\BaseModel->paginate(10)
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Karyawan->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-12 19:22:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 19:22:49 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(599): CodeIgniter\Model->builder()
+ 3 SYSTEMPATH\BaseModel.php(1203): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Controllers\Karyawan.php(24): CodeIgniter\BaseModel->paginate(10)
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Karyawan->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-12 19:22:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 19:22:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 19:22:56 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(599): CodeIgniter\Model->builder()
+ 3 SYSTEMPATH\BaseModel.php(1203): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Controllers\Karyawan.php(24): CodeIgniter\BaseModel->paginate(10)
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Karyawan->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-12 19:33:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 19:33:06 --> Call to a member function paginate() on array
+in APPPATH\Controllers\Karyawan.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Karyawan->index()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-12 19:34:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 19:34:38 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(599): CodeIgniter\Model->builder()
+ 3 SYSTEMPATH\BaseModel.php(1203): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Controllers\Karyawan.php(24): CodeIgniter\BaseModel->paginate(10)
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Karyawan->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-12 19:34:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 19:34:52 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(838): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Karyawan.php(26): CodeIgniter\Model->__get('ModelJabatan')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Karyawan->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-12 19:34:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 19:34:53 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(838): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Karyawan.php(26): CodeIgniter\Model->__get('ModelJabatan')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Karyawan->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-12 19:35:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 19:35:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 19:35:06 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(838): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Karyawan.php(26): CodeIgniter\Model->__get('ModelJabatan')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Karyawan->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-12 19:35:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 19:46:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 19:46:23 --> Call to a member function paginate() on array
+in APPPATH\Controllers\Karyawan.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Karyawan->index()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-12 19:47:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 19:47:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 19:47:47 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(599): CodeIgniter\Model->builder()
+ 3 SYSTEMPATH\BaseModel.php(1203): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Controllers\Karyawan.php(24): CodeIgniter\BaseModel->paginate(10, 'group1')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Karyawan->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-12 19:48:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 19:55:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 19:55:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 19:56:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 19:56:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 19:56:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 19:56:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 19:57:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 19:57:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:23:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 20:23:32 --> Call to undefined function <!-- DEBUG-VIEW START 1 SYSTEMPATH\Pager\Views\default_full.php -->
+
+<nav aria-label="Page navigation">
+	<ul class="pagination">
+		
+					<li class="active">
+				<a href="http://localhost/e-absensi/public/index.php/Karyawan?page=1">
+					1				</a>
+			</li>
+					<li >
+				<a href="http://localhost/e-absensi/public/index.php/Karyawan?page=2">
+					2				</a>
+			</li>
+					<li >
+				<a href="http://localhost/e-absensi/public/index.php/Karyawan?page=3">
+					3				</a>
+			</li>
+		
+					<li>
+				<a href="http://localhost/e-absensi/public/index.php/Karyawan?page=4" aria-label="Next">
+					<span aria-hidden="true">Next</span>
+				</a>
+			</li>
+			<li>
+				<a href="http://localhost/e-absensi/public/index.php/Karyawan?page=10" aria-label="Last">
+					<span aria-hidden="true">Last</span>
+				</a>
+			</li>
+			</ul>
+</nav>
+
+<!-- DEBUG-VIEW ENDED 1 SYSTEMPATH\Pager\Views\default_full.php -->
+()
+in APPPATH\Views\backend\v_karyawan.php on line 169.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('backend/v_karyawan', [], true)
+ 4 APPPATH\Views\v_template_back.php(167): view('backend/v_karyawan')
+ 5 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\e-absensi\\app\\Views\\v_template_back.php')
+ 6 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('v_template_back', [], true)
+ 8 APPPATH\Controllers\Karyawan.php(37): view('v_template_back', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Karyawan->index()
+10 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+11 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-12 20:24:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 20:24:20 --> Undefined variable: pager
+in APPPATH\Views\backend\v_karyawan.php on line 169.
+ 1 APPPATH\Views\backend\v_karyawan.php(169): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: pager', 'C:\\xampp\\htdocs\\e-absensi\\app\\Views\\backend\\v_karyawan.php', 169, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\e-absensi\\app\\Views\\backend\\v_karyawan.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('backend/v_karyawan', [], true)
+ 5 APPPATH\Views\v_template_back.php(167): view('backend/v_karyawan')
+ 6 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\e-absensi\\app\\Views\\v_template_back.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('v_template_back', [], true)
+ 9 APPPATH\Controllers\Karyawan.php(37): view('v_template_back', [...])
+10 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Karyawan->index()
+11 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+12 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-12 20:24:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 20:24:42 --> Call to undefined function <!-- DEBUG-VIEW START 1 SYSTEMPATH\Pager\Views\default_full.php -->
+
+<nav aria-label="Page navigation">
+	<ul class="pagination">
+		
+					<li class="active">
+				<a href="http://localhost/e-absensi/public/index.php/Karyawan?page=1">
+					1				</a>
+			</li>
+					<li >
+				<a href="http://localhost/e-absensi/public/index.php/Karyawan?page=2">
+					2				</a>
+			</li>
+					<li >
+				<a href="http://localhost/e-absensi/public/index.php/Karyawan?page=3">
+					3				</a>
+			</li>
+		
+					<li>
+				<a href="http://localhost/e-absensi/public/index.php/Karyawan?page=4" aria-label="Next">
+					<span aria-hidden="true">Next</span>
+				</a>
+			</li>
+			<li>
+				<a href="http://localhost/e-absensi/public/index.php/Karyawan?page=10" aria-label="Last">
+					<span aria-hidden="true">Last</span>
+				</a>
+			</li>
+			</ul>
+</nav>
+
+<!-- DEBUG-VIEW ENDED 1 SYSTEMPATH\Pager\Views\default_full.php -->
+()
+in APPPATH\Views\backend\v_karyawan.php on line 169.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('backend/v_karyawan', [], true)
+ 4 APPPATH\Views\v_template_back.php(167): view('backend/v_karyawan')
+ 5 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\e-absensi\\app\\Views\\v_template_back.php')
+ 6 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('v_template_back', [], true)
+ 8 APPPATH\Controllers\Karyawan.php(37): view('v_template_back', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Karyawan->index()
+10 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+11 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-12 20:30:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 20:30:59 --> Call to a member function links() on string
+in APPPATH\Views\backend\v_karyawan.php on line 169.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('backend/v_karyawan', [], true)
+ 4 APPPATH\Views\v_template_back.php(167): view('backend/v_karyawan')
+ 5 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\e-absensi\\app\\Views\\v_template_back.php')
+ 6 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('v_template_back', [], true)
+ 8 APPPATH\Controllers\Karyawan.php(37): view('v_template_back', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Karyawan->index()
+10 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+11 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-12 20:32:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 20:32:20 --> Call to a member function links() on string
+in APPPATH\Views\backend\v_karyawan.php on line 169.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('backend/v_karyawan', [], true)
+ 4 APPPATH\Views\v_template_back.php(167): view('backend/v_karyawan')
+ 5 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\e-absensi\\app\\Views\\v_template_back.php')
+ 6 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('v_template_back', [], true)
+ 8 APPPATH\Controllers\Karyawan.php(37): view('v_template_back', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Karyawan->index()
+10 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+11 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-12 20:33:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 20:33:52 --> Undefined variable: pager
+in APPPATH\Views\backend\v_karyawan.php on line 169.
+ 1 APPPATH\Views\backend\v_karyawan.php(169): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: pager', 'C:\\xampp\\htdocs\\e-absensi\\app\\Views\\backend\\v_karyawan.php', 169, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\e-absensi\\app\\Views\\backend\\v_karyawan.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('backend/v_karyawan', [], true)
+ 5 APPPATH\Views\v_template_back.php(167): view('backend/v_karyawan')
+ 6 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\e-absensi\\app\\Views\\v_template_back.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('v_template_back', [], true)
+ 9 APPPATH\Controllers\Karyawan.php(37): view('v_template_back', [...])
+10 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Karyawan->index()
+11 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+12 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-12 20:34:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 20:34:20 --> Undefined variable: pager
+in APPPATH\Views\backend\v_karyawan.php on line 169.
+ 1 APPPATH\Views\backend\v_karyawan.php(169): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: pager', 'C:\\xampp\\htdocs\\e-absensi\\app\\Views\\backend\\v_karyawan.php', 169, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\e-absensi\\app\\Views\\backend\\v_karyawan.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('backend/v_karyawan', [], true)
+ 5 APPPATH\Views\v_template_back.php(167): view('backend/v_karyawan')
+ 6 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\e-absensi\\app\\Views\\v_template_back.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('v_template_back', [], true)
+ 9 APPPATH\Controllers\Karyawan.php(37): view('v_template_back', [...])
+10 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Karyawan->index()
+11 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+12 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-12 20:35:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 20:35:41 --> Undefined variable: pager
+in APPPATH\Views\backend\v_karyawan.php on line 169.
+ 1 APPPATH\Views\backend\v_karyawan.php(169): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: pager', 'C:\\xampp\\htdocs\\e-absensi\\app\\Views\\backend\\v_karyawan.php', 169, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\e-absensi\\app\\Views\\backend\\v_karyawan.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('backend/v_karyawan', [], true)
+ 5 APPPATH\Views\v_template_back.php(167): view('backend/v_karyawan')
+ 6 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\e-absensi\\app\\Views\\v_template_back.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('v_template_back', [], true)
+ 9 APPPATH\Controllers\Karyawan.php(37): view('v_template_back', [...])
+10 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Karyawan->index()
+11 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+12 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-12 20:35:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 20:35:43 --> Undefined variable: pager
+in APPPATH\Views\backend\v_karyawan.php on line 169.
+ 1 APPPATH\Views\backend\v_karyawan.php(169): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: pager', 'C:\\xampp\\htdocs\\e-absensi\\app\\Views\\backend\\v_karyawan.php', 169, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\e-absensi\\app\\Views\\backend\\v_karyawan.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('backend/v_karyawan', [], true)
+ 5 APPPATH\Views\v_template_back.php(167): view('backend/v_karyawan')
+ 6 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\e-absensi\\app\\Views\\v_template_back.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('v_template_back', [], true)
+ 9 APPPATH\Controllers\Karyawan.php(37): view('v_template_back', [...])
+10 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Karyawan->index()
+11 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+12 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-12 20:37:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 20:37:09 --> Call to a member function makeLinks() on string
+in APPPATH\Views\backend\v_karyawan.php on line 169.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('backend/v_karyawan', [], true)
+ 4 APPPATH\Views\v_template_back.php(167): view('backend/v_karyawan')
+ 5 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\e-absensi\\app\\Views\\v_template_back.php')
+ 6 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('v_template_back', [], true)
+ 8 APPPATH\Controllers\Karyawan.php(37): view('v_template_back', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Karyawan->index()
+10 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+11 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-12 20:38:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 20:38:59 --> Undefined variable: pager
+in APPPATH\Views\backend\v_karyawan.php on line 169.
+ 1 APPPATH\Views\backend\v_karyawan.php(169): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: pager', 'C:\\xampp\\htdocs\\e-absensi\\app\\Views\\backend\\v_karyawan.php', 169, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\e-absensi\\app\\Views\\backend\\v_karyawan.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('backend/v_karyawan', [], true)
+ 5 APPPATH\Views\v_template_back.php(167): view('backend/v_karyawan')
+ 6 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\e-absensi\\app\\Views\\v_template_back.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('v_template_back', [], true)
+ 9 APPPATH\Controllers\Karyawan.php(37): view('v_template_back', [...])
+10 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Karyawan->index()
+11 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+12 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-12 20:40:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 20:40:13 --> Call to a member function makeLinks() on string
+in APPPATH\Views\backend\v_karyawan.php on line 169.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('backend/v_karyawan', [], true)
+ 4 APPPATH\Views\v_template_back.php(167): view('backend/v_karyawan')
+ 5 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\e-absensi\\app\\Views\\v_template_back.php')
+ 6 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('v_template_back', [], true)
+ 8 APPPATH\Controllers\Karyawan.php(37): view('v_template_back', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Karyawan->index()
+10 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+11 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-12 20:41:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 20:41:42 --> Call to a member function Links() on string
+in APPPATH\Views\backend\v_karyawan.php on line 169.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('backend/v_karyawan', [], true)
+ 4 APPPATH\Views\v_template_back.php(167): view('backend/v_karyawan')
+ 5 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\e-absensi\\app\\Views\\v_template_back.php')
+ 6 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('v_template_back', [], true)
+ 8 APPPATH\Controllers\Karyawan.php(37): view('v_template_back', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Karyawan->index()
+10 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+11 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-12 20:41:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:56:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:57:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 20:59:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 20:59:31 --> "front_full" is not a valid Pager template.
+in SYSTEMPATH\Pager\Pager.php on line 120.
+ 1 SYSTEMPATH\Pager\Pager.php(120): CodeIgniter\Pager\Exceptions\PagerException::forInvalidTemplate('front_full')
+ 2 SYSTEMPATH\Pager\Pager.php(110): CodeIgniter\Pager\Pager->displayLinks('default', 'front_full')
+ 3 APPPATH\Controllers\Karyawan.php(27): CodeIgniter\Pager\Pager->makeLinks(1, 20, 200, 'front_full')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Karyawan->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-12 21:00:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:00:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:01:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:01:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:02:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:04:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:05:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:06:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:07:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:30:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 21:30:16 --> Undefined variable: pager_links
+in APPPATH\Views\backend\v_monitoring.php on line 59.
+ 1 APPPATH\Views\backend\v_monitoring.php(59): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: pager_links', 'C:\\xampp\\htdocs\\e-absensi\\app\\Views\\backend\\v_monitoring.php', 59, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\e-absensi\\app\\Views\\backend\\v_monitoring.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('backend/v_monitoring', [], true)
+ 5 APPPATH\Views\v_template_back.php(167): view('backend/v_monitoring')
+ 6 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\e-absensi\\app\\Views\\v_template_back.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('v_template_back', [], true)
+ 9 APPPATH\Controllers\Monitoring.php(40): view('v_template_back', [...])
+10 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Monitoring->index()
+11 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+12 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-12 21:30:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 21:30:59 --> Undefined variable: pager_links
+in APPPATH\Views\backend\v_monitoring.php on line 59.
+ 1 APPPATH\Views\backend\v_monitoring.php(59): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: pager_links', 'C:\\xampp\\htdocs\\e-absensi\\app\\Views\\backend\\v_monitoring.php', 59, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\e-absensi\\app\\Views\\backend\\v_monitoring.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('backend/v_monitoring', [], true)
+ 5 APPPATH\Views\v_template_back.php(167): view('backend/v_monitoring')
+ 6 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\e-absensi\\app\\Views\\v_template_back.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('v_template_back', [], true)
+ 9 APPPATH\Controllers\Monitoring.php(40): view('v_template_back', [...])
+10 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Monitoring->index()
+11 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+12 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-12 21:31:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 21:31:00 --> Undefined variable: pager_links
+in APPPATH\Views\backend\v_monitoring.php on line 59.
+ 1 APPPATH\Views\backend\v_monitoring.php(59): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: pager_links', 'C:\\xampp\\htdocs\\e-absensi\\app\\Views\\backend\\v_monitoring.php', 59, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\e-absensi\\app\\Views\\backend\\v_monitoring.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('backend/v_monitoring', [], true)
+ 5 APPPATH\Views\v_template_back.php(167): view('backend/v_monitoring')
+ 6 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\e-absensi\\app\\Views\\v_template_back.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('v_template_back', [], true)
+ 9 APPPATH\Controllers\Monitoring.php(40): view('v_template_back', [...])
+10 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Monitoring->index()
+11 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+12 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-12 21:31:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:32:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:32:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 21:32:35 --> Undefined variable: pager_links
+in APPPATH\Views\backend\v_monitoring.php on line 59.
+ 1 APPPATH\Views\backend\v_monitoring.php(59): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: pager_links', 'C:\\xampp\\htdocs\\e-absensi\\app\\Views\\backend\\v_monitoring.php', 59, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\e-absensi\\app\\Views\\backend\\v_monitoring.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('backend/v_monitoring', [], true)
+ 5 APPPATH\Views\v_template_back.php(167): view('backend/v_monitoring')
+ 6 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\e-absensi\\app\\Views\\v_template_back.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('v_template_back', [], true)
+ 9 APPPATH\Controllers\Monitoring.php(40): view('v_template_back', [...])
+10 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Monitoring->index()
+11 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+12 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-12 21:32:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:33:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:36:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 21:36:36 --> "pagination" is not a valid Pager template.
+in SYSTEMPATH\Pager\Pager.php on line 120.
+ 1 SYSTEMPATH\Pager\Pager.php(120): CodeIgniter\Pager\Exceptions\PagerException::forInvalidTemplate('pagination')
+ 2 SYSTEMPATH\Pager\Pager.php(110): CodeIgniter\Pager\Pager->displayLinks('default', 'pagination')
+ 3 APPPATH\Controllers\Monitoring.php(31): CodeIgniter\Pager\Pager->makeLinks(1, 5, 200, 'pagination')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Monitoring->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-12 21:37:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:39:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:39:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:39:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 21:39:23 --> Invalid file: "backend/v_monitoring1.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('backend/v_monitoring1.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('backend/v_monitoring1', [], true)
+ 3 APPPATH\Views\v_template_back.php(167): view('backend/v_monitoring1')
+ 4 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\e-absensi\\app\\Views\\v_template_back.php')
+ 5 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('v_template_back', [], true)
+ 7 APPPATH\Controllers\Monitoring.php(40): view('v_template_back', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Monitoring->index()
+ 9 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+10 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-12 21:44:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:49:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 21:49:07 --> Undefined variable: pager_links
+in APPPATH\Controllers\Monitoring.php on line 37.
+ 1 APPPATH\Controllers\Monitoring.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: pager_links', 'C:\\xampp\\htdocs\\e-absensi\\app\\Controllers\\Monitoring.php', 37, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Monitoring->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-12 21:52:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 21:52:30 --> Invalid file: "backend/v_monitoring<!-- DEBUG-VIEW START 1 APPPATH\Views\Pagers\monitoring_pagination.php -->
+<!-- <nav aria-label="Page navigation example"> 
+    <ul class="pagination">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
+</nav> -->
+
+<nav aria-label="Page navigation">
+    <ul class="pagination">
+        
+                    <li class="active">
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=1">
+                    1                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=2">
+                    2                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=3">
+                    3                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=4">
+                    4                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=5">
+                    5                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=6">
+                    6                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=7">
+                    7                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=8">
+                    8                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=9">
+                    9                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=10">
+                    10                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=11">
+                    11                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=12">
+                    12                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=13">
+                    13                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=14">
+                    14                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=15">
+                    15                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=16">
+                    16                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=17">
+                    17                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=18">
+                    18                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=19">
+                    19                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=20">
+                    20                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=21">
+                    21                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=22">
+                    22                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=23">
+                    23                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=24">
+                    24                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=25">
+                    25                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=26">
+                    26                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=27">
+                    27                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=28">
+                    28                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=29">
+                    29                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=30">
+                    30                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=31">
+                    31                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=32">
+                    32                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=33">
+                    33                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=34">
+                    34                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=35">
+                    35                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=36">
+                    36                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=37">
+                    37                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=38">
+                    38                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=39">
+                    39                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=40">
+                    40                </a>
+            </li>
+        
+                    <li>
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=2" aria-label="Next">
+                    <span aria-hidden="true">Next</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=40" aria-label="Last">
+                    <span aria-hidden="true">Last</span>
+                </a>
+            </li>
+            </ul>
+</nav>
+<!-- DEBUG-VIEW ENDED 1 APPPATH\Views\Pagers\monitoring_pagination.php -->
+"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('backend/v_monitoring<!-- DEBUG-VIEW START 1 APPPATH\\Views\\Pagers\\monitoring_pagination.php -->
+<!-- <nav aria-label="Page navigation example"> 
+    <ul class="pagination">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
+</nav> -->
+
+<nav aria-label="Page navigation">
+    <ul class="pagination">
+        
+                    <li class="active">
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=1">
+                    1                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=2">
+                    2                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=3">
+                    3                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=4">
+                    4                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=5">
+                    5                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=6">
+                    6                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=7">
+                    7                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=8">
+                    8                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=9">
+                    9                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=10">
+                    10                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=11">
+                    11                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=12">
+                    12                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=13">
+                    13                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=14">
+                    14                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=15">
+                    15                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=16">
+                    16                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=17">
+                    17                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=18">
+                    18                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=19">
+                    19                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=20">
+                    20                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=21">
+                    21                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=22">
+                    22                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=23">
+                    23                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=24">
+                    24                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=25">
+                    25                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=26">
+                    26                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=27">
+                    27                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=28">
+                    28                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=29">
+                    29                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=30">
+                    30                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=31">
+                    31                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=32">
+                    32                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=33">
+                    33                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=34">
+                    34                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=35">
+                    35                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=36">
+                    36                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=37">
+                    37                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=38">
+                    38                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=39">
+                    39                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=40">
+                    40                </a>
+            </li>
+        
+                    <li>
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=2" aria-label="Next">
+                    <span aria-hidden="true">Next</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=40" aria-label="Last">
+                    <span aria-hidden="true">Last</span>
+                </a>
+            </li>
+            </ul>
+</nav>
+<!-- DEBUG-VIEW ENDED 1 APPPATH\\Views\\Pagers\\monitoring_pagination.php -->
+')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('backend/v_monitoring<!-- DEBUG-VIEW START 1 APPPATH\\Views\\Pagers\\monitoring_pagination.php -->
+<!-- <nav aria-label="Page navigation example"> 
+    <ul class="pagination">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
+</nav> -->
+
+<nav aria-label="Page navigation">
+    <ul class="pagination">
+        
+                    <li class="active">
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=1">
+                    1                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=2">
+                    2                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=3">
+                    3                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=4">
+                    4                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=5">
+                    5                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=6">
+                    6                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=7">
+                    7                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=8">
+                    8                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=9">
+                    9                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=10">
+                    10                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=11">
+                    11                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=12">
+                    12                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=13">
+                    13                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=14">
+                    14                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=15">
+                    15                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=16">
+                    16                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=17">
+                    17                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=18">
+                    18                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=19">
+                    19                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=20">
+                    20                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=21">
+                    21                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=22">
+                    22                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=23">
+                    23                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=24">
+                    24                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=25">
+                    25                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=26">
+                    26                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=27">
+                    27                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=28">
+                    28                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=29">
+                    29                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=30">
+                    30                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=31">
+                    31                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=32">
+                    32                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=33">
+                    33                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=34">
+                    34                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=35">
+                    35                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=36">
+                    36                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=37">
+                    37                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=38">
+                    38                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=39">
+                    39                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=40">
+                    40                </a>
+            </li>
+        
+                    <li>
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=2" aria-label="Next">
+                    <span aria-hidden="true">Next</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=40" aria-label="Last">
+                    <span aria-hidden="true">Last</span>
+                </a>
+            </li>
+            </ul>
+</nav>
+<!-- DEBUG-VIEW ENDED 1 APPPATH\\Views\\Pagers\\monitoring_pagination.php -->
+', [], true)
+ 3 APPPATH\Views\v_template_back.php(167): view('backend/v_monitoring<!-- DEBUG-VIEW START 1 APPPATH\\Views\\Pagers\\monitoring_pagination.php -->
+<!-- <nav aria-label="Page navigation example"> 
+    <ul class="pagination">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
+</nav> -->
+
+<nav aria-label="Page navigation">
+    <ul class="pagination">
+        
+                    <li class="active">
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=1">
+                    1                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=2">
+                    2                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=3">
+                    3                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=4">
+                    4                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=5">
+                    5                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=6">
+                    6                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=7">
+                    7                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=8">
+                    8                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=9">
+                    9                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=10">
+                    10                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=11">
+                    11                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=12">
+                    12                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=13">
+                    13                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=14">
+                    14                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=15">
+                    15                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=16">
+                    16                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=17">
+                    17                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=18">
+                    18                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=19">
+                    19                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=20">
+                    20                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=21">
+                    21                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=22">
+                    22                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=23">
+                    23                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=24">
+                    24                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=25">
+                    25                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=26">
+                    26                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=27">
+                    27                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=28">
+                    28                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=29">
+                    29                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=30">
+                    30                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=31">
+                    31                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=32">
+                    32                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=33">
+                    33                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=34">
+                    34                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=35">
+                    35                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=36">
+                    36                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=37">
+                    37                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=38">
+                    38                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=39">
+                    39                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=40">
+                    40                </a>
+            </li>
+        
+                    <li>
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=2" aria-label="Next">
+                    <span aria-hidden="true">Next</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=40" aria-label="Last">
+                    <span aria-hidden="true">Last</span>
+                </a>
+            </li>
+            </ul>
+</nav>
+<!-- DEBUG-VIEW ENDED 1 APPPATH\\Views\\Pagers\\monitoring_pagination.php -->
+')
+ 4 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\e-absensi\\app\\Views\\v_template_back.php')
+ 5 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('v_template_back', [], true)
+ 7 APPPATH\Controllers\Monitoring.php(40): view('v_template_back', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Monitoring->index()
+ 9 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+10 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-12 21:52:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 21:52:45 --> Invalid file: "backend/v_monitoring<!-- DEBUG-VIEW START 1 APPPATH\Views\Pagers\monitoring_pagination.php -->
+<!-- <nav aria-label="Page navigation example"> 
+    <ul class="pagination">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
+</nav> -->
+
+<nav aria-label="Page navigation">
+    <ul class="pagination">
+        
+                    <li class="active">
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=1">
+                    1                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=2">
+                    2                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=3">
+                    3                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=4">
+                    4                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=5">
+                    5                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=6">
+                    6                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=7">
+                    7                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=8">
+                    8                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=9">
+                    9                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=10">
+                    10                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=11">
+                    11                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=12">
+                    12                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=13">
+                    13                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=14">
+                    14                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=15">
+                    15                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=16">
+                    16                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=17">
+                    17                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=18">
+                    18                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=19">
+                    19                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=20">
+                    20                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=21">
+                    21                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=22">
+                    22                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=23">
+                    23                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=24">
+                    24                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=25">
+                    25                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=26">
+                    26                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=27">
+                    27                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=28">
+                    28                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=29">
+                    29                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=30">
+                    30                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=31">
+                    31                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=32">
+                    32                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=33">
+                    33                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=34">
+                    34                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=35">
+                    35                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=36">
+                    36                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=37">
+                    37                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=38">
+                    38                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=39">
+                    39                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=40">
+                    40                </a>
+            </li>
+        
+                    <li>
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=2" aria-label="Next">
+                    <span aria-hidden="true">Next</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=40" aria-label="Last">
+                    <span aria-hidden="true">Last</span>
+                </a>
+            </li>
+            </ul>
+</nav>
+<!-- DEBUG-VIEW ENDED 1 APPPATH\Views\Pagers\monitoring_pagination.php -->
+"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('backend/v_monitoring<!-- DEBUG-VIEW START 1 APPPATH\\Views\\Pagers\\monitoring_pagination.php -->
+<!-- <nav aria-label="Page navigation example"> 
+    <ul class="pagination">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
+</nav> -->
+
+<nav aria-label="Page navigation">
+    <ul class="pagination">
+        
+                    <li class="active">
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=1">
+                    1                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=2">
+                    2                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=3">
+                    3                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=4">
+                    4                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=5">
+                    5                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=6">
+                    6                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=7">
+                    7                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=8">
+                    8                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=9">
+                    9                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=10">
+                    10                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=11">
+                    11                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=12">
+                    12                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=13">
+                    13                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=14">
+                    14                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=15">
+                    15                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=16">
+                    16                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=17">
+                    17                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=18">
+                    18                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=19">
+                    19                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=20">
+                    20                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=21">
+                    21                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=22">
+                    22                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=23">
+                    23                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=24">
+                    24                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=25">
+                    25                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=26">
+                    26                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=27">
+                    27                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=28">
+                    28                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=29">
+                    29                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=30">
+                    30                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=31">
+                    31                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=32">
+                    32                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=33">
+                    33                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=34">
+                    34                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=35">
+                    35                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=36">
+                    36                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=37">
+                    37                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=38">
+                    38                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=39">
+                    39                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=40">
+                    40                </a>
+            </li>
+        
+                    <li>
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=2" aria-label="Next">
+                    <span aria-hidden="true">Next</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=40" aria-label="Last">
+                    <span aria-hidden="true">Last</span>
+                </a>
+            </li>
+            </ul>
+</nav>
+<!-- DEBUG-VIEW ENDED 1 APPPATH\\Views\\Pagers\\monitoring_pagination.php -->
+')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('backend/v_monitoring<!-- DEBUG-VIEW START 1 APPPATH\\Views\\Pagers\\monitoring_pagination.php -->
+<!-- <nav aria-label="Page navigation example"> 
+    <ul class="pagination">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
+</nav> -->
+
+<nav aria-label="Page navigation">
+    <ul class="pagination">
+        
+                    <li class="active">
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=1">
+                    1                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=2">
+                    2                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=3">
+                    3                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=4">
+                    4                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=5">
+                    5                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=6">
+                    6                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=7">
+                    7                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=8">
+                    8                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=9">
+                    9                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=10">
+                    10                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=11">
+                    11                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=12">
+                    12                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=13">
+                    13                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=14">
+                    14                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=15">
+                    15                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=16">
+                    16                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=17">
+                    17                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=18">
+                    18                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=19">
+                    19                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=20">
+                    20                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=21">
+                    21                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=22">
+                    22                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=23">
+                    23                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=24">
+                    24                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=25">
+                    25                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=26">
+                    26                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=27">
+                    27                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=28">
+                    28                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=29">
+                    29                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=30">
+                    30                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=31">
+                    31                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=32">
+                    32                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=33">
+                    33                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=34">
+                    34                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=35">
+                    35                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=36">
+                    36                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=37">
+                    37                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=38">
+                    38                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=39">
+                    39                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=40">
+                    40                </a>
+            </li>
+        
+                    <li>
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=2" aria-label="Next">
+                    <span aria-hidden="true">Next</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=40" aria-label="Last">
+                    <span aria-hidden="true">Last</span>
+                </a>
+            </li>
+            </ul>
+</nav>
+<!-- DEBUG-VIEW ENDED 1 APPPATH\\Views\\Pagers\\monitoring_pagination.php -->
+', [], true)
+ 3 APPPATH\Views\v_template_back.php(167): view('backend/v_monitoring<!-- DEBUG-VIEW START 1 APPPATH\\Views\\Pagers\\monitoring_pagination.php -->
+<!-- <nav aria-label="Page navigation example"> 
+    <ul class="pagination">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
+</nav> -->
+
+<nav aria-label="Page navigation">
+    <ul class="pagination">
+        
+                    <li class="active">
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=1">
+                    1                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=2">
+                    2                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=3">
+                    3                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=4">
+                    4                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=5">
+                    5                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=6">
+                    6                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=7">
+                    7                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=8">
+                    8                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=9">
+                    9                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=10">
+                    10                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=11">
+                    11                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=12">
+                    12                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=13">
+                    13                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=14">
+                    14                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=15">
+                    15                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=16">
+                    16                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=17">
+                    17                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=18">
+                    18                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=19">
+                    19                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=20">
+                    20                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=21">
+                    21                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=22">
+                    22                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=23">
+                    23                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=24">
+                    24                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=25">
+                    25                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=26">
+                    26                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=27">
+                    27                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=28">
+                    28                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=29">
+                    29                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=30">
+                    30                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=31">
+                    31                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=32">
+                    32                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=33">
+                    33                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=34">
+                    34                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=35">
+                    35                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=36">
+                    36                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=37">
+                    37                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=38">
+                    38                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=39">
+                    39                </a>
+            </li>
+                    <li >
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=40">
+                    40                </a>
+            </li>
+        
+                    <li>
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=2" aria-label="Next">
+                    <span aria-hidden="true">Next</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost/e-absensi/public/index.php/Monitoring?page=40" aria-label="Last">
+                    <span aria-hidden="true">Last</span>
+                </a>
+            </li>
+            </ul>
+</nav>
+<!-- DEBUG-VIEW ENDED 1 APPPATH\\Views\\Pagers\\monitoring_pagination.php -->
+')
+ 4 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\e-absensi\\app\\Views\\v_template_back.php')
+ 5 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('v_template_back', [], true)
+ 7 APPPATH\Controllers\Monitoring.php(40): view('v_template_back', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Monitoring->index()
+ 9 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+10 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-12 21:54:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:54:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:54:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:55:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:55:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 21:56:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 22:19:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 22:19:40 --> Undefined index: nik
+in APPPATH\Views\backend\v_monitoring.php on line 43.
+ 1 APPPATH\Views\backend\v_monitoring.php(43): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nik', 'C:\\xampp\\htdocs\\e-absensi\\app\\Views\\backend\\v_monitoring.php', 43, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\e-absensi\\app\\Views\\backend\\v_monitoring.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('backend/v_monitoring', [], true)
+ 5 APPPATH\Views\v_template_back.php(167): view('backend/v_monitoring')
+ 6 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\e-absensi\\app\\Views\\v_template_back.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('v_template_back', [], true)
+ 9 APPPATH\Controllers\Monitoring.php(36): view('v_template_back', [...])
+10 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Monitoring->index()
+11 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+12 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-12 22:21:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 22:21:14 --> Undefined index: nama_karyawan
+in APPPATH\Views\backend\v_monitoring.php on line 44.
+ 1 APPPATH\Views\backend\v_monitoring.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nama_karyawan', 'C:\\xampp\\htdocs\\e-absensi\\app\\Views\\backend\\v_monitoring.php', 44, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\e-absensi\\app\\Views\\backend\\v_monitoring.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('backend/v_monitoring', [], true)
+ 5 APPPATH\Views\v_template_back.php(167): view('backend/v_monitoring')
+ 6 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\e-absensi\\app\\Views\\v_template_back.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('v_template_back', [], true)
+ 9 APPPATH\Controllers\Monitoring.php(36): view('v_template_back', [...])
+10 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Monitoring->index()
+11 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+12 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-12 22:22:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 22:23:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 22:23:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 22:26:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 22:31:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 22:31:09 --> Undefined variable: pager_links
+in APPPATH\Views\backend\v_monitoring.php on line 59.
+ 1 APPPATH\Views\backend\v_monitoring.php(59): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: pager_links', 'C:\\xampp\\htdocs\\e-absensi\\app\\Views\\backend\\v_monitoring.php', 59, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\e-absensi\\app\\Views\\backend\\v_monitoring.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('backend/v_monitoring', [], true)
+ 5 APPPATH\Views\v_template_back.php(167): view('backend/v_monitoring')
+ 6 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\e-absensi\\app\\Views\\v_template_back.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('v_template_back', [], true)
+ 9 APPPATH\Controllers\Monitoring.php(35): view('v_template_back', [...])
+10 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Monitoring->index()
+11 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+12 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-12 22:31:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 22:31:28 --> Object of class CodeIgniter\Pager\Pager could not be converted to string
+in APPPATH\Views\backend\v_monitoring.php on line 59.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('backend/v_monitoring', [], true)
+ 4 APPPATH\Views\v_template_back.php(167): view('backend/v_monitoring')
+ 5 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\e-absensi\\app\\Views\\v_template_back.php')
+ 6 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('v_template_back', [], true)
+ 8 APPPATH\Controllers\Monitoring.php(35): view('v_template_back', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Monitoring->index()
+10 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+11 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-12 22:31:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 22:31:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 22:34:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 22:37:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 22:38:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 22:41:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 22:41:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 22:41:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 22:43:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 22:43:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 22:43:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 22:43:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 22:43:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 22:44:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 22:46:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 22:46:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 22:46:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 22:48:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 22:48:24 --> Call to a member function links() on string
+in APPPATH\Views\backend\v_monitoring.php on line 55.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('backend/v_monitoring', [], true)
+ 4 APPPATH\Views\v_template_back.php(167): view('backend/v_monitoring')
+ 5 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\e-absensi\\app\\Views\\v_template_back.php')
+ 6 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('v_template_back', [], true)
+ 8 APPPATH\Controllers\Monitoring.php(36): view('v_template_back', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Monitoring->index()
+10 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+11 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-12 22:49:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 22:49:04 --> Call to a member function simplelinks() on string
+in APPPATH\Views\backend\v_monitoring.php on line 55.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('backend/v_monitoring', [], true)
+ 4 APPPATH\Views\v_template_back.php(167): view('backend/v_monitoring')
+ 5 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\e-absensi\\app\\Views\\v_template_back.php')
+ 6 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('v_template_back', [], true)
+ 8 APPPATH\Controllers\Monitoring.php(36): view('v_template_back', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Monitoring->index()
+10 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+11 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-12 22:57:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 22:57:13 --> Undefined variable: pager
+in APPPATH\Views\backend\v_monitoring.php on line 55.
+ 1 APPPATH\Views\backend\v_monitoring.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: pager', 'C:\\xampp\\htdocs\\e-absensi\\app\\Views\\backend\\v_monitoring.php', 55, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\e-absensi\\app\\Views\\backend\\v_monitoring.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('backend/v_monitoring', [], true)
+ 5 APPPATH\Views\v_template_back.php(167): view('backend/v_monitoring')
+ 6 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\e-absensi\\app\\Views\\v_template_back.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('v_template_back', [], true)
+ 9 APPPATH\Controllers\Monitoring.php(35): view('v_template_back', [...])
+10 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Monitoring->index()
+11 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+12 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-12 22:58:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 22:58:28 --> Undefined variable: pager
+in APPPATH\Views\backend\v_monitoring.php on line 55.
+ 1 APPPATH\Views\backend\v_monitoring.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: pager', 'C:\\xampp\\htdocs\\e-absensi\\app\\Views\\backend\\v_monitoring.php', 55, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\e-absensi\\app\\Views\\backend\\v_monitoring.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('backend/v_monitoring', [], true)
+ 5 APPPATH\Views\v_template_back.php(167): view('backend/v_monitoring')
+ 6 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\e-absensi\\app\\Views\\v_template_back.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('v_template_back', [], true)
+ 9 APPPATH\Controllers\Monitoring.php(35): view('v_template_back', [...])
+10 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Monitoring->index()
+11 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+12 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-12 22:59:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 22:59:29 --> Undefined variable: pager
+in APPPATH\Views\backend\v_monitoring.php on line 55.
+ 1 APPPATH\Views\backend\v_monitoring.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: pager', 'C:\\xampp\\htdocs\\e-absensi\\app\\Views\\backend\\v_monitoring.php', 55, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\e-absensi\\app\\Views\\backend\\v_monitoring.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('backend/v_monitoring', [], true)
+ 5 APPPATH\Views\v_template_back.php(167): view('backend/v_monitoring')
+ 6 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\e-absensi\\app\\Views\\v_template_back.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('v_template_back', [], true)
+ 9 APPPATH\Controllers\Monitoring.php(28): view('v_template_back', [...])
+10 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Monitoring->index()
+11 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+12 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-12 22:59:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 22:59:43 --> Undefined variable: pager
+in APPPATH\Views\backend\v_monitoring.php on line 55.
+ 1 APPPATH\Views\backend\v_monitoring.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: pager', 'C:\\xampp\\htdocs\\e-absensi\\app\\Views\\backend\\v_monitoring.php', 55, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\e-absensi\\app\\Views\\backend\\v_monitoring.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('backend/v_monitoring', [], true)
+ 5 APPPATH\Views\v_template_back.php(167): view('backend/v_monitoring')
+ 6 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\e-absensi\\app\\Views\\v_template_back.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('v_template_back', [], true)
+ 9 APPPATH\Controllers\Monitoring.php(28): view('v_template_back', [...])
+10 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Monitoring->index()
+11 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+12 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-12 23:00:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 23:00:50 --> Undefined variable: pager
+in APPPATH\Views\backend\v_monitoring.php on line 55.
+ 1 APPPATH\Views\backend\v_monitoring.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: pager', 'C:\\xampp\\htdocs\\e-absensi\\app\\Views\\backend\\v_monitoring.php', 55, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\e-absensi\\app\\Views\\backend\\v_monitoring.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('backend/v_monitoring', [], true)
+ 5 APPPATH\Views\v_template_back.php(167): view('backend/v_monitoring')
+ 6 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\e-absensi\\app\\Views\\v_template_back.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('v_template_back', [], true)
+ 9 APPPATH\Controllers\Monitoring.php(28): view('v_template_back', [...])
+10 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Monitoring->index()
+11 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+12 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-12 23:06:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 23:06:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 23:08:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 23:09:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 23:22:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 23:25:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 23:26:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 23:26:22 --> Undefined index: nik
+in APPPATH\Views\backend\v_monitoring.php on line 43.
+ 1 APPPATH\Views\backend\v_monitoring.php(43): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nik', 'C:\\xampp\\htdocs\\e-absensi\\app\\Views\\backend\\v_monitoring.php', 43, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\e-absensi\\app\\Views\\backend\\v_monitoring.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('backend/v_monitoring', [], true)
+ 5 APPPATH\Views\v_template_back.php(167): view('backend/v_monitoring')
+ 6 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\e-absensi\\app\\Views\\v_template_back.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('v_template_back', [], true)
+ 9 APPPATH\Controllers\Monitoring.php(36): view('v_template_back', [...])
+10 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Monitoring->index()
+11 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+12 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-12 23:27:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 23:27:41 --> Undefined index: nik
+in APPPATH\Views\backend\v_monitoring.php on line 43.
+ 1 APPPATH\Views\backend\v_monitoring.php(43): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nik', 'C:\\xampp\\htdocs\\e-absensi\\app\\Views\\backend\\v_monitoring.php', 43, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\e-absensi\\app\\Views\\backend\\v_monitoring.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('backend/v_monitoring', [], true)
+ 5 APPPATH\Views\v_template_back.php(167): view('backend/v_monitoring')
+ 6 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\e-absensi\\app\\Views\\v_template_back.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('v_template_back', [], true)
+ 9 APPPATH\Controllers\Monitoring.php(36): view('v_template_back', [...])
+10 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Monitoring->index()
+11 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+12 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-12 23:35:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 23:35:16 --> Call to a member function getGet() on null
+in APPPATH\Models\ModelMonitoring.php on line 17.
+ 1 APPPATH\Controllers\Monitoring.php(32): App\Models\ModelMonitoring->allData()
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Monitoring->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-12 23:40:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-12 23:40:23 --> Undefined index: nik
+in APPPATH\Views\backend\v_monitoring.php on line 43.
+ 1 APPPATH\Views\backend\v_monitoring.php(43): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nik', 'C:\\xampp\\htdocs\\e-absensi\\app\\Views\\backend\\v_monitoring.php', 43, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\e-absensi\\app\\Views\\backend\\v_monitoring.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('backend/v_monitoring', [], true)
+ 5 APPPATH\Views\v_template_back.php(167): view('backend/v_monitoring')
+ 6 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\e-absensi\\app\\Views\\v_template_back.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('v_template_back', [], true)
+ 9 APPPATH\Controllers\Monitoring.php(36): view('v_template_back', [...])
+10 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Monitoring->index()
+11 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoring))
+12 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-12 23:42:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-12 23:43:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
